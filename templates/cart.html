@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <link rel="stylesheet" href="/static/css/cart.css" />
+    <script type="module" src="/static/js/cart-logic.js" defer></script>
+    <title>E-Watches | Cart</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <h1 class="logo"><a href="../../index.html">E-Watches</a></h1>
+      <nav class="nav__menu">
+        <ul class="nav__menu-items">
+          <li class="nav__menu-item">
+            <a href="/Products">Products</a>
+          </li>
+          <li class="nav__menu-item active">
+            <a href="../Cart/cart.html">Cart</a>
+            <div class="items" id="numberOfItems"></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Cart Items -->
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <div class="wrapper">
+        <div class="cart__items">
+          <div class="cart__items-item">
+            <img src="/static/images/product-1.webp" alt="" />
+            <div class="content">
+              <p class="title">
+                <span
+                  >boAt Wave Call Smart Watch, Smart Talk with Advanced
+                  Dedicated Bluetooth Calling Chip, 1.69” HD Display with 550
+                  NITS & 70% Color Gamut, 150+ Watch Faces, Multi-Sport
+                  Modes,HR,SpO2, IP68(Active Black)</span
+                >
+                <span class="item__price">₹1,799</span>
+              </p>
+              <p class="item__quantity">QTY: <span>2</span></p>
+              <button type="button" class="remove_btn">Remove from cart</button>
+            </div>
+          </div>
+          <div class="cart__items-item">
+            <img src="/static/images/product-1.webp" alt="" />
+            <div class="content">
+              <p class="title">
+                <span
+                  >boAt Wave Call Smart Watch, Smart Talk with Advanced
+                  Dedicated Bluetooth Calling Chip, 1.69” HD Display with 550
+                  NITS & 70% Color Gamut, 150+ Watch Faces, Multi-Sport
+                  Modes,HR,SpO2, IP68(Active Black)</span
+                >
+                <span class="item__price">₹1,799</span>
+              </p>
+              <p class="item__quantity">QTY: <span>2</span></p>
+              <button type="button" class="remove_btn">Remove from cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Subtotal -->
+        <div class="subtotal">
+          <h3 class="heading">Details</h3>
+          <p>Total Amount: <span>₹ 3,598</span></p>
+          <p>Charges: <span>₹ 500</span></p>
+          <hr />
+          <p>Subtotal: <span class="total_amount">₹ 4,098</span></p>
+          <button type="button" class="pay_btn">
+            <a href="/payment"> Pay Now</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

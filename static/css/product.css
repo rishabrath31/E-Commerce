@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+.products__container-item {
+  border-radius: 6px;
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+}
+.products__container-item img {
+  object-fit: contain;
+}
+
+.products__container-item .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.products__container-item .title {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.products__container-item .star_rating {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.products__container-item .star_rating i {
+  font-size: 1.2rem;
+  color: #ffa41c;
+}
+
+.products__container-item .reviews {
+  color: #5b5b5b;
+  font-size: 0.75rem;
+}
+
+.products__container-item .list_price {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.products__container-item .list_price sup {
+  font-size: 0.85rem;
+}
+
+.products__container-item .mrp {
+  font-size: 0.85rem;
+  text-decoration: line-through;
+  color: #5b5b5b;
+}
+.products__container-item .quantity__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+.products__container-item input {
+  font-size: 1rem;
+}
+.products__container-item .add__btn {
+  max-width: max-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffa41c;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.products__container-item .add__btn:hover {
+  background-color: #ff9900;
+}
+.products__container-item hr {
+  margin: 1rem 0 0.5rem;
+  background-color: #f3f3f3;
+  height: 1px;
+}
+
+.products__container-item .about__para {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.products__container-item .item__desc {
+  /* list-style: none; */
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}

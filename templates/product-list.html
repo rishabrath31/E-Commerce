@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <link rel="stylesheet" href="/static/css/product-list.css" />
+
+    <script type="module" src="/static/js/product-list.js" defer></script>
+    <script type="module" src="/static/js/productList.js" defer></script>
+    <script type="module" src="/static/js/cart-logic.js" defer></script>
+
+    <title>E-watches | Products</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <h1 class="logo"><a href="../../index.html">E-Watches</a></h1>
+      <nav class="nav__menu">
+        <ul class="nav__menu-items">
+          <li class="nav__menu-item active">
+            <a href="/Products">Products</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="/Cart">Cart</a>
+            <div class="items" id="numberOfItems"></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Products -->
+    <div class="container">
+      <h1 class="heading">All Products</h1>
+      <div class="products__container"></div>
+    </div>
+  </body>
+</html>

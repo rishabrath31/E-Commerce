@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/payment.css" />
+    <title>PAYMENT</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Payment</h1>
+        <p>Choose payment method</p>
+      </header>
+      <div id="payment-methods">
+        <div class="methods">
+          <i class="fa fa-credit-card"></i>
+          <span>Credit</span><span>Card</span>
+        </div>
+        <div class="methods">
+          <i class="fab fa-paypal fa-3x"></i>
+          <span>Pay</span><span>Pal</span>
+        </div>
+        <div class="methods">
+          <i class="fab fa-amazon-pay fa-3x"></i>
+          <span>E-</span><span>Pay</span>
+        </div>
+      </div>
+      <div id="info">
+        <div class="billing-info">
+          <h4>Billing info</h4>
+          <div>
+            <label for="full-name">Full name</label>
+            <input type="text" id="full-name" placeholder="First Name" />
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="407 Evergreen Rd." />
+          </div>
+          <div>
+            <div>
+              <label for="city">city</label>
+              <input type="text" id="city" placeholder="City" />
+            </div>
+            <div>
+              <label for="zip-code">Zip code</label>
+              <input type="text" id="zip-code" placeholder="95673" />
+            </div>
+          </div>
+          <div>
+            <label for="country">Country</label>
+            <select id="country">
+              <option value="USA">United States</option>
+              <option value="IND">India</option>
+            </select>
+          </div>
+        </div>
+        <div class="card-info">
+          <h4>Credit card info</h4>
+          <div>
+            <div>
+              <label for="card-number">Card number</label>
+              <input
+                type="number"
+                id="card-number"
+                placeholder="1234   5678   3456   2456"
+              />
+            </div>
+            <div>
+              <p>Visa</p>
+            </div>
+          </div>
+          <div>
+            <label for="holder-name">Cardholder name</label>
+            <input type="text" id="holder-name" placeholder="John Doe" />
+          </div>
+          <div>
+            <label for="exp">Expire date</label>
+            <input type="month" id="exp" value="2021-05" />
+          </div>
+          <div>
+            <div>
+              <label for="cvv">Cvv</label>
+              <input type="text" id="cvv" placeholder="123" />
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Proceed" />
+      </div>
+    </div>
+  </body>
+</html>
